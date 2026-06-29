@@ -16,6 +16,8 @@ services:
       - N8N_PAYLOAD_SIZE_MAX=64
       - NODES_EXCLUDE=[]
       - NODE_FUNCTION_ALLOW_BUILTIN=crypto
+      - NODE_FUNCTION_ALLOW_EXTERNAL=jszip
+      - N8N_DEFAULT_BINARY_DATA_MODE=default
     volumes:
       - ./data/n8n:/home/node/.n8n
       - /home/operador/proyectos/robot_kpi:/home/operador/proyectos/robot_kpi
